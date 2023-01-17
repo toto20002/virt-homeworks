@@ -56,8 +56,18 @@ Ansible можно применять на готовой инфраструкт
 
 **ОТВЕТ:**
 
-![изображение](https://user-images.githubusercontent.com/89098193/147603490-b12d7506-c2b3-4f15-9613-08c4aef0778f.png)
+![изображение](https://user-images.githubusercontent.com/89098193/213012019-3ae310a9-387d-4120-94ae-71e09aaa7dc9.png)
 
-![изображение](https://user-images.githubusercontent.com/89098193/147603502-28b9b336-fc45-48aa-8546-c333d0cbd6f5.png)
+![изображение](https://user-images.githubusercontent.com/89098193/213012045-2ad7ea35-fdd1-4c88-bc99-27d1d67a4a80.png)
 
+
+## Задача 4 (*)
+
+Воспроизвести практическую часть лекции самостоятельно.
+
+    Создать виртуальную машину.
+    Зайти внутрь ВМ, убедиться, что Docker установлен с помощью команды docker ps
+
+
+![изображение](https://user-images.githubusercontent.com/89098193/213012157-6af08edf-8e4d-4315-b111-9abac53f2d0b.png)
 
