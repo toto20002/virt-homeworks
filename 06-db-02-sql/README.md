@@ -11,15 +11,38 @@
 в который будут складываться данные БД и бэкапы.
 
 Приведите получившуюся команду или docker-compose манифест.
+![изображение](https://user-images.githubusercontent.com/89098193/219895144-d8a7851e-23d7-4fc7-bd01-9e1bb68b4705.png)
+
+![изображение](https://user-images.githubusercontent.com/89098193/219895256-8dd286b3-c535-457c-a0b5-929b5e20254b.png)
+
+![изображение](https://user-images.githubusercontent.com/89098193/219895194-750b6add-2fd5-4b27-8554-846535fd0884.png)
+
 
 ## Задача 2
 
 В БД из задачи 1: 
 - создайте пользователя test-admin-user и БД test_db
+
+![изображение](https://user-images.githubusercontent.com/89098193/219895478-cad89865-090e-42b3-87e7-c713fd408acb.png)
+
 - в БД test_db создайте таблицу orders и clients (спeцификация таблиц ниже)
+
+![изображение](https://user-images.githubusercontent.com/89098193/219895551-18d17dfe-f551-4261-ae73-d85142ef4ec0.png)
+
 - предоставьте привилегии на все операции пользователю test-admin-user на таблицы БД test_db
+
+![изображение](https://user-images.githubusercontent.com/89098193/219895597-f92f6539-d5ef-4281-873a-ae838baea8a4.png)
+
+
 - создайте пользователя test-simple-user  
+
+![изображение](https://user-images.githubusercontent.com/89098193/219895621-74e00806-ae4f-4a42-a06a-f15533ef2ec4.png)
+
+
 - предоставьте пользователю test-simple-user права на SELECT/INSERT/UPDATE/DELETE данных таблиц БД test_db
+
+![изображение](https://user-images.githubusercontent.com/89098193/219895647-1e6b7cbb-6947-42cb-8067-3ef4c61ccfc5.png)
+
 
 Таблица orders:
 - id (serial primary key)
@@ -34,9 +57,19 @@
 
 Приведите:
 - итоговый список БД после выполнения пунктов выше,
+![изображение](https://user-images.githubusercontent.com/89098193/219895769-43e4c99b-a572-41e8-872f-9ec82e428a31.png)
+
 - описание таблиц (describe)
+![изображение](https://user-images.githubusercontent.com/89098193/219895823-ec184a3c-bb87-46f3-8ad7-86d8ee7c6485.png)
+
+
 - SQL-запрос для выдачи списка пользователей с правами над таблицами test_db
+![изображение](https://user-images.githubusercontent.com/89098193/219895882-a0fc5e11-97ca-48b7-b02b-e30815dde241.png)
+
+
 - список пользователей с правами над таблицами test_db
+![изображение](https://user-images.githubusercontent.com/89098193/219895943-89ecec28-8ebf-4f68-a768-bed610802400.png)
+
 
 ## Задача 3
 
@@ -62,8 +95,16 @@
 |Ронни Джеймс Дио| Russia|
 |Ritchie Blackmore| Russia|
 
+
+![изображение](https://user-images.githubusercontent.com/89098193/219896028-df8377bc-454f-42aa-9c1d-648203c22aed.png)
+
+
+
 Используя SQL синтаксис:
 - вычислите количество записей для каждой таблицы 
+
+![изображение](https://user-images.githubusercontent.com/89098193/219896091-cc518424-6cdd-4531-8aef-19222e38a3ce.png)
+
 - приведите в ответе:
     - запросы 
     - результаты их выполнения.
@@ -82,7 +123,11 @@
 
 Приведите SQL-запросы для выполнения данных операций.
 
+![изображение](https://user-images.githubusercontent.com/89098193/219896839-2d462b1d-fb90-428e-949d-8ccd34e6440f.png)
+
 Приведите SQL-запрос для выдачи всех пользователей, которые совершили заказ, а также вывод данного запроса.
+
+![изображение](https://user-images.githubusercontent.com/89098193/219896878-ddb2458e-5665-41f0-8460-acb4a95d0bd3.png)
  
 Подсказк - используйте директиву `UPDATE`.
 
@@ -92,6 +137,11 @@
 (используя директиву EXPLAIN).
 
 Приведите получившийся результат и объясните что значат полученные значения.
+
+![изображение](https://user-images.githubusercontent.com/89098193/219896968-fd80ed7a-8ebb-4de3-8648-82a0d564301c.png)
+
+Команда выдала пошаговый ход выполнения SQL запроса, с подробным выводом данных о затраченном времени и ресурсах. Также команда выдает предполагаемое время выполнения запроса и фактически затраченное.
+Эта команда позволяет найти долго выполняющиеся запросы для их оптимизации.
 
 ## Задача 6
 
@@ -104,6 +154,12 @@
 Восстановите БД test_db в новом контейнере.
 
 Приведите список операций, который вы применяли для бэкапа данных и восстановления. 
+
+![изображение](https://user-images.githubusercontent.com/89098193/219897214-503d18fe-a9f2-4e99-a9a2-152f621b9a45.png)
+
+![изображение](https://user-images.githubusercontent.com/89098193/219897240-cf6e33bf-0a20-42a5-86d4-ccefb3bcc52c.png)
+
+![изображение](https://user-images.githubusercontent.com/89098193/219897281-fa7db319-7485-4a91-94bd-aeecc9b43e5d.png)
 
 ---
 
