@@ -4,7 +4,11 @@
 
 Используя docker поднимите инстанс PostgreSQL (версию 13). Данные БД сохраните в volume.
 
+![изображение](https://user-images.githubusercontent.com/89098193/222520875-72252870-02fa-4bd6-85c2-27e5ff882198.png)
+
 Подключитесь к БД PostgreSQL используя `psql`.
+
+![изображение](https://user-images.githubusercontent.com/89098193/222521204-7035ea65-4c41-42cf-a80b-4bc5d401b8df.png)
 
 Воспользуйтесь командой `\?` для вывода подсказки по имеющимся в `psql` управляющим командам.
 
@@ -15,20 +19,32 @@
 - вывода описания содержимого таблиц
 - выхода из psql
 
+![изображение](https://user-images.githubusercontent.com/89098193/222521267-35569b17-5a85-40a7-b2f3-30ba746a44b8.png)
+
+
 ## Задача 2
 
 Используя `psql` создайте БД `test_database`.
+
+![изображение](https://user-images.githubusercontent.com/89098193/222521799-2d405b32-d940-4e8c-97ca-1725862c74b0.png)
+
 
 Изучите [бэкап БД](https://github.com/netology-code/virt-homeworks/tree/master/06-db-04-postgresql/test_data).
 
 Восстановите бэкап БД в `test_database`.
 
+![изображение](https://user-images.githubusercontent.com/89098193/222521819-027e7741-d237-4a1f-868a-a860bb9b6d2e.png)
+
 Перейдите в управляющую консоль `psql` внутри контейнера.
 
 Подключитесь к восстановленной БД и проведите операцию ANALYZE для сбора статистики по таблице.
 
+![изображение](https://user-images.githubusercontent.com/89098193/222521884-85a9c5c0-6d3e-43f2-aebe-522254351d29.png)
+
 Используя таблицу [pg_stats](https://postgrespro.ru/docs/postgresql/12/view-pg-stats), найдите столбец таблицы `orders` 
 с наибольшим средним значением размера элементов в байтах.
+
+![изображение](https://user-images.githubusercontent.com/89098193/222521943-d7ad7b4c-76fe-42fc-9753-28b2923dc1b7.png)
 
 **Приведите в ответе** команду, которую вы использовали для вычисления и полученный результат.
 
@@ -40,13 +56,22 @@
 
 Предложите SQL-транзакцию для проведения данной операции.
 
+![изображение](https://user-images.githubusercontent.com/89098193/222522014-03b62537-4801-49e9-b283-8599c9d8d96d.png)
+
 Можно ли было изначально исключить "ручное" разбиение при проектировании таблицы orders?
+
+Да. При создании таблицы можно сразу добавить секционирование с опцией PARTITION BY. Затем создать секции со своим условием.
+
 
 ## Задача 4
 
 Используя утилиту `pg_dump` создайте бекап БД `test_database`.
 
+![изображение](https://user-images.githubusercontent.com/89098193/222522564-63154100-2447-4ebe-841e-7cd9d9998fd9.png)
+
 Как бы вы доработали бэкап-файл, чтобы добавить уникальность значения столбца `title` для таблиц `test_database`?
+
+![изображение](https://user-images.githubusercontent.com/89098193/222528431-cd909fb8-35ac-4f13-8d4b-94a12e107982.png)
 
 ---
 
