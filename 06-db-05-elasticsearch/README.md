@@ -29,7 +29,15 @@
 - при некоторых проблемах вам поможет docker директива ulimit
 - elasticsearch в логах обычно описывает проблему и пути ее решения
 
-Далее мы будем работать с данным экземпляром elasticsearch.
+Далее мы будем работать с данным экземпляром elasticsearch
+
+![изображение](https://user-images.githubusercontent.com/89098193/223233507-de89c712-a3bd-4b2b-9292-535977419da9.png)
+
+![изображение](https://user-images.githubusercontent.com/89098193/223233546-dc9b39c1-9b3f-4d8a-9f31-7e26c4926975.png)
+
+
+https://hub.docker.com/r/toto20002/elasticsearch/tags
+
 
 ## Задача 2
 
