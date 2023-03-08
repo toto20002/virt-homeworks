@@ -55,13 +55,25 @@ https://hub.docker.com/r/toto20002/elasticsearch/tags
 | ind-2 | 1 | 2 |
 | ind-3 | 2 | 4 |
 
+![изображение](https://user-images.githubusercontent.com/89098193/223827925-ac81617f-3aaa-44a2-8f54-d6a689a92c3a.png)
+
+
 Получите список индексов и их статусов, используя API и **приведите в ответе** на задание.
+
+![изображение](https://user-images.githubusercontent.com/89098193/223828054-3e02b584-b7a3-41c8-854b-97fdd6548afe.png)
 
 Получите состояние кластера `elasticsearch`, используя API.
 
+![изображение](https://user-images.githubusercontent.com/89098193/223828176-4a2b296a-04db-4954-92c8-9272a0a5d7a9.png)
+
 Как вы думаете, почему часть индексов и кластер находится в состоянии yellow?
 
+Потому что в кластере всего один узел, для индексов созданы реплики, но привязать их некуда.
+
 Удалите все индексы.
+
+![изображение](https://user-images.githubusercontent.com/89098193/223828125-0a9c8c3f-d0f4-42e2-ac64-811b81173f8d.png)
+
 
 **Важно**
 
@@ -81,19 +93,42 @@ https://hub.docker.com/r/toto20002/elasticsearch/tags
 
 **Приведите в ответе** запрос API и результат вызова API для создания репозитория.
 
+![изображение](https://user-images.githubusercontent.com/89098193/223829299-513c9e3b-8893-4c7a-9045-a5819e289a30.png)
+
 Создайте индекс `test` с 0 реплик и 1 шардом и **приведите в ответе** список индексов.
+
+![изображение](https://user-images.githubusercontent.com/89098193/223834735-7688afee-e61c-40c4-be43-71a4a84cd107.png)
+
+
+![изображение](https://user-images.githubusercontent.com/89098193/223834888-785ef41f-a785-4210-8012-7108fafe7881.png)
+
 
 [Создайте `snapshot`](https://www.elastic.co/guide/en/elasticsearch/reference/current/snapshots-take-snapshot.html) 
 состояния кластера `elasticsearch`.
 
+![изображение](https://user-images.githubusercontent.com/89098193/223836849-e5033477-fb6f-424f-8b2b-8487899f80c1.png)
+
+
 **Приведите в ответе** список файлов в директории со `snapshot`ами.
 
+![изображение](https://user-images.githubusercontent.com/89098193/223831096-4a466685-fcae-4f91-b9aa-44b61a0f0bee.png)
+
 Удалите индекс `test` и создайте индекс `test-2`. **Приведите в ответе** список индексов.
+
+![изображение](https://user-images.githubusercontent.com/89098193/223830939-37d9150c-f201-480e-80d8-6315aef660a6.png)
+
 
 [Восстановите](https://www.elastic.co/guide/en/elasticsearch/reference/current/snapshots-restore-snapshot.html) состояние
 кластера `elasticsearch` из `snapshot`, созданного ранее. 
 
+
+
+
 **Приведите в ответе** запрос к API восстановления и итоговый список индексов.
+
+![изображение](https://user-images.githubusercontent.com/89098193/223830446-0f4d83b6-7b98-487e-9e00-8aa9b13f16a1.png)
+
+
 
 Подсказки:
 - возможно вам понадобится доработать `elasticsearch.yml` в части директивы `path.repo` и перезапустить `elasticsearch`
